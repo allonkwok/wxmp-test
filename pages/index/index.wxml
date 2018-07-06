@@ -12,3 +12,4 @@
   </view>
   <button bindtap='download'>download</button>
 </view>
+ <web-view src="https://wxmp.pongwa.com/index.html"></web-view>

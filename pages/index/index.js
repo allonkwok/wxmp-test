@@ -18,7 +18,7 @@ Page({
   download: function(){
     var t = this;
     wx.downloadFile({
-      url:'https://wxmp.pongwa.com/resource.zip',
+      url:'https://wxmp.pongwa.com/index.html',
       success:function(res){
         console.log(res.statusCode, res.tempFilePath);
         wx.saveFile({
@@ -26,7 +26,8 @@ Page({
           success:function(result){
             console.log(result.savedFilePath);
             t.setData({
-              motto: result.savedFilePath
+              motto: result.savedFilePath,
+              pageUrl: result.savedFilePath
             });
           }
         })
