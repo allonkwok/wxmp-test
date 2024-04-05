@@ -1,3 +1,3 @@
 # wxmp-test
 
-hello test
+hello test 1
